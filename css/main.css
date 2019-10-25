@@ -24,31 +24,31 @@ body {
 ::-webkit-input-placeholder {
   color: #006985 !important;
   font-weight: bold;
-  opacity: 1; 
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: #006985 !important;
   font-weight: bold;
-  opacity: 1; 
+  opacity: 1;
 }
 
 ::-ms-input-placeholder {
   color: #006985 !important;
   font-weight: bold;
-  opacity: 1; 
+  opacity: 1;
 }
 
 ::-moz-placeholder {
   color: #006985 !important;
   font-weight: bold;
-  opacity: 1; 
+  opacity: 1;
 }
 
 ::placeholder {
   color: #006985 !important;
   font-weight: bold;
-  opacity: 1; 
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
@@ -305,7 +305,6 @@ footer {
 
 .section-title {
   color: #006985;
-  padding-top: 0.5em;
 }
 
 .welcome-actions a {
@@ -409,3 +408,52 @@ footer {
   height: 400px;
   object-fit: cover;
 } */
+
+.intro-background {
+  background: url("../images/new/bg-shape.png");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#about-section {
+  background: url("../images/new/wave.png");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.intro-background img {
+  width: 80%;
+}
+
+/* #contact-section {
+  position: relative;
+}
+
+#contact-section::after {
+  content: "";
+  background: url("../images/new/contact.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+} */
+
+.intro-images {
+  margin-top: 2em;
+}
+
+.intro-images img {
+  width: 100%;
+}
+
+.welcome-msg {
+  margin-top: 0.8em;
+}
