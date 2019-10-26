@@ -312,7 +312,8 @@ footer {
 }
 
 .section-title-h2 {
-  font-size: 2em;
+  line-height: 1.5em;
+  font-size: 1.7em;
   font-weight: bold;
 }
 
@@ -325,6 +326,9 @@ footer {
   position: relative;
   border: 0;
   border-bottom: 1px solid #fdba2e;
+}
+
+.first-form-line {
   margin-bottom: 4em;
 }
 
@@ -334,7 +338,7 @@ footer {
 
 .input-icon {
   position: relative;
-  top: 25%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -369,7 +373,7 @@ footer {
 
 .contact-info li {
   list-style: none;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 .contact-info i {
@@ -434,10 +438,11 @@ footer {
 
 #contact-section::after {
   content: "";
-  background: url("../images/new/contact.png");
+  background: url("../images/pattern-4.png");
   background-repeat: no-repeat;
-  background-position: bottom center;
-  opacity: 0.1;
+  background-position: center right;
+  background-size: cover;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
@@ -456,4 +461,19 @@ footer {
 
 .welcome-msg {
   margin-top: 0.8em;
+}
+
+.form-title-h2 {
+  font-size: 1.1em;
+  color: #006985;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+.form-box {
+  margin-top: 0.2em;
+}
+
+button {
+  margin-top: 2em;
 }
