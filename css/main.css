@@ -98,6 +98,11 @@ body {
   color: #fdba2e;
 }
 
+.top-header-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
 .social-link {
   float: left;
   margin-left: 10px;
@@ -418,6 +423,7 @@ footer {
 } */
 
 .intro-background {
+  position: relative;
   background: url("../images/new/bg-shape.png");
   height: 400px;
   background-repeat: no-repeat;
@@ -436,24 +442,13 @@ footer {
   width: 80%;
 }
 
-/* #contact-section {
+#services-section {
   position: relative;
-}
-
-#contact-section::after {
-  content: "";
-  background: url("../images/pattern-4.png");
+  background: url("../images/new/tall3.png");
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: cover;
-  opacity: 0.4;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-} */
+  background-size: contain;
+}
 
 .intro-images {
   margin-top: 2em;
@@ -476,6 +471,9 @@ footer {
 
 .form-box {
   margin-top: 0.2em;
+  background: url("../images/pattern-4.png");
+  padding-bottom: 5em;
+  background-size: contain;
 }
 
 button {
@@ -549,6 +547,64 @@ button {
   height: 350px;
   background-size: cover;
   background-position: center;
+}
+
+.owl-theme .owl-nav {
+  font-size: 24px;
+  color: #fff;
+  line-height: 15px;
+  margin-top: 1em;
+}
+
+.owl-theme .owl-nav .owl-next,
+.owl-theme .owl-nav .owl-prev {
+  border: 1px solid #fff !important;
+  background: -webkit-linear-gradient(
+    309deg,
+    #006885ce 0%,
+    #1fc8db 51%,
+    #006985 75%
+  ) !important;
+  background: -o-linear-gradient(
+    309deg,
+    #006885ce 0%,
+    #1fc8db 51%,
+    #006985 75%
+  ) !important;
+  background: linear-gradient(
+    141deg,
+    #006885ce 0%,
+    #1fc8db 51%,
+    #006985 75%
+  ) !important;
+  width: 35px;
+  height: 40px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 3px;
+}
+
+.box-slider-img img {
+  height: 250px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.internal-service-box a {
+  text-decoration: none;
+}
+
+.internal-service-box li {
+  list-style: none;
+}
+
+.intro-overlay img {
+  position: absolute;
+  bottom: -4px;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 992px) and (max-width: 1183px) {
