@@ -4,6 +4,7 @@ $(document).ready(function() {
     margin: 10,
     rtl: true,
     nav: true,
+    dots: false,
     responsive: {
       0: {
         items: 1
@@ -21,6 +22,7 @@ $(document).ready(function() {
     loop: true,
     margin: 10,
     rtl: true,
+    dots: false,
     nav: true,
     responsive: {
       0: {

@@ -322,13 +322,13 @@ footer {
 
 .section-title-h2 {
   line-height: 1.5em;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: bold;
 }
 
 .section-title-p {
   font-size: 1.2em;
-  margin: 1.4em 0;
+  margin: 1.2em 0;
 }
 
 .form-control {
@@ -382,7 +382,7 @@ footer {
 
 .contact-info li {
   list-style: none;
-  margin-bottom: 1em;
+  margin-bottom: 0.6em;
 }
 
 .contact-info i {
@@ -474,6 +474,7 @@ footer {
   background: url("../images/pattern-4.png");
   padding-bottom: 5em;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 button {
@@ -556,6 +557,10 @@ button {
   margin-top: 1em;
 }
 
+.owl-theme .owl-nav button:focus {
+  outline: 0;
+}
+
 .owl-theme .owl-nav .owl-next,
 .owl-theme .owl-nav .owl-prev {
   border: 1px solid #fff !important;
@@ -595,16 +600,71 @@ button {
   text-decoration: none;
 }
 
-.internal-service-box li {
-  list-style: none;
-}
-
 .intro-overlay img {
   position: absolute;
   bottom: -4px;
   width: 150px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.internal-box-icon img {
+  width: 120px;
+  margin-bottom: 1em;
+}
+
+.internal-box-title {
+  color: #006985;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.internal-box-p {
+  color: #006985;
+}
+
+.internal-box-caption {
+  height: 175px;
+}
+
+.internal-service-box li {
+  list-style: none;
+  color: #006985;
+  margin-bottom: 0.7em;
+}
+
+.popup .form-box {
+  background-size: 0 0;
+}
+
+.internal-service-box {
+  margin-bottom: 3em;
+  padding: 0 1em;
+  border: 1px solid #00688548;
+}
+
+.internal-box-action {
+  margin-bottom: 1em;
+}
+
+.internal-services-title {
+  color: #006985;
+  margin-bottom: 2em;
+}
+
+.internal-h2 {
+  font-size: 2em;
+}
+
+.internal-margin {
+  margin: 50px 40px ;
+}
+
+.before-after-slider img {
+  background: url("../images/new/wave.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1em;
 }
 
 @media (min-width: 992px) and (max-width: 1183px) {
