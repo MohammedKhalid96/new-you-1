@@ -672,12 +672,12 @@ button {
   margin: 50px 40px;
 }
 
-.before-after-slider img {
+/* .before-after-slider img {
   background: url("../images/new/wave.png");
   background-size: contain;
   background-repeat: no-repeat;
   padding: 1em;
-}
+} */
 
 .why-us-icon img {
   width: 40px;

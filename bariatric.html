@@ -201,7 +201,12 @@
     </nav>
 
     <div class="f-img">
-      <img src="images/new/clients-1.png" alt="" class="image-100" />
+      <img
+        src="images/new/clients-1.png"
+        alt=""
+        class="image-100 wow fadeInDown"
+        data-wow-duration="2s"
+      />
     </div>
 
     <div id="contact-section">
@@ -264,10 +269,11 @@
                         <div class="col-11">
                           <input
                             type="text"
+                            name="title"
                             class="form-control"
                             id="form-name"
                             aria-describedby="name"
-                            placeholder="الأسم"
+                            placeholder="الأسم بالكامل"
                             required
                           />
                         </div>
@@ -287,10 +293,11 @@
                         <div class="col-11">
                           <input
                             type="tel"
+                            name="phone"
                             class="form-control"
                             id="form-phone"
                             aria-describedby="phone"
-                            placeholder="رقم الهاتف"
+                            placeholder="الجوال"
                             required
                           />
                         </div>
@@ -303,66 +310,37 @@
                       <div class="row">
                         <div class="col-1">
                           <div class="input-icon">
-                            <i class="fas fa-file-medical-alt"></i>
+                            <i class="fas fa-cut"></i>
                           </div>
                         </div>
 
                         <div class="col-11">
-                          <select
-                            name="select"
-                            required
-                            class="custom-select form-control"
-                          >
-                            <option selected>اختيار الخدمة</option>
-                            <option value="1">جراحات السمنة و المناظير</option>
-                            <option value="2"
-                              >الحلول الغير جراحية للسمنة</option
-                            >
-                            <option value="3">التجميل النسائي</option>
-                            <option value="4">الجراحات التجميلية</option>
-                            <option value="5">الجلديه والحقن التجميلي</option>
-                            <option value="6">الليزر التجميلي والعلاجي</option>
-                            <option value="7">شد و صقل الجسم بدون جراحة</option>
-                            <option value="8"
-                              >علاج الدوالي و الشعيرات الدموية</option
-                            >
-                            <option value="9">تجميل و علاج الأسنان</option>
-                            <option value="10">الحمية والرشاقة</option>
-                            <option value="11">اخري</option>
-                          </select>
+                          <input
+                            type="text"
+                            name="Discount_code"
+                            class="form-control"
+                            id="form-code"
+                            aria-describedby="code"
+                            placeholder="كود الخصم"
+                          />
+                          <input type="hidden" name="source" value="goog" />
+                          <input
+                            type="hidden"
+                            name="status"
+                            value="طلب جديد"
+                          />
+                          <input type="hidden" name="department" value="قسم جراحة السمنة">
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <!-- <div class="col-md-6">
-                          <div class="form-group">
-                            <div class="row">
-                              <div class="col-1">
-                                <div class="input-icon">
-                                  <i class="fas fa-cut"></i>
-                                </div>
-                              </div>
-      
-                              <div class="col-11">
-                                <input
-                                  type="text"
-                                  class="form-control"
-                                  id="form-code"
-                                  aria-describedby="code"
-                                  placeholder="كود الخصم"
-                                  required
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div> -->
                 </div>
 
                 <div class="form-group text-center">
                   <button
                     type="submit"
-                    class="btn link action-btn slider-more link-padding no-line"
+                    class="btn link action-btn slider-more link-padding no-line wow fadeInUp"
+                    data-wow-duration="2s"
                   >
                     ارسال
                   </button>
@@ -377,14 +355,20 @@
     <div class="f-img">
       <div class="doctor-img">
         <div class="doctor-overlay text-left">
-          <img src="images/new/bariatric/doctor.png" alt="" class="image-100" />
+          <img
+            src="images/new/bariatric/doctor.png"
+            alt=""
+            class="image-100 wow fadeIn"
+            data-wow-duration="2s"
+            data-wow-delay="1s"
+          />
         </div>
 
         <div class="doctor-caption-overlay">
-          <h2 class="doctor-caption-h2">
+          <h2 class="doctor-caption-h2 wow fadeInLeft" data-wow-duration="2s">
             البروفيسور د.عائض القحطاني
           </h2>
-          <p class="doctor-caption-p">
+          <p class="doctor-caption-p wow fadeInUp" data-wow-duration="2s">
             استشاري جراحات السمنة و المناظير و سمنة الأطفال أول رئيس عربي
             للجمعية الدولية لجراحة مناظير الأطفال رئيس الرابطة العربية لجراحات
             السمنة
@@ -418,7 +402,10 @@
                       </p>
                     </div>
 
-                    <div class="internal-box-action">
+                    <div
+                      class="internal-box-action wow fadeInUp"
+                      data-wow-duration="2s"
+                    >
                       <span class="internal-box-span order-link"
                         >احجز موعد</span
                       >
@@ -449,7 +436,10 @@
                       </p>
                     </div>
 
-                    <div class="internal-box-action">
+                    <div
+                      class="internal-box-action wow fadeInUp"
+                      data-wow-duration="2s"
+                    >
                       <span class="internal-box-span order-link"
                         >احجز موعد</span
                       >
@@ -480,7 +470,10 @@
                       </p>
                     </div>
 
-                    <div class="internal-box-action">
+                    <div
+                      class="internal-box-action wow fadeInUp"
+                      data-wow-duration="2s"
+                    >
                       <span class="internal-box-span order-link"
                         >احجز موعد</span
                       >
@@ -509,7 +502,10 @@
                       </p>
                     </div>
 
-                    <div class="internal-box-action">
+                    <div
+                      class="internal-box-action wow fadeInUp"
+                      data-wow-duration="2s"
+                    >
                       <span class="internal-box-span order-link"
                         >احجز موعد</span
                       >
@@ -535,7 +531,7 @@
         </div>
       </div>
 
-      <div class="videos section-margin">
+      <div class="videos section-margin wow">
         <div class="row">
           <div class="col-md-4">
             <div class="video">
@@ -581,7 +577,7 @@
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/k6SbLGN6nxk"
+                src="https://www.youtube.com/embed/8gMc2Ari4-k"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -677,10 +673,11 @@
                           <div class="col-11">
                             <input
                               type="text"
+                              name="title"
                               class="form-control"
                               id="form-name"
                               aria-describedby="name"
-                              placeholder="الأسم"
+                              placeholder="الأسم بالكامل"
                               required
                             />
                           </div>
@@ -700,10 +697,11 @@
                           <div class="col-11">
                             <input
                               type="tel"
+                              name="phone"
                               class="form-control"
                               id="form-phone"
                               aria-describedby="phone"
-                              placeholder="رقم الهاتف"
+                              placeholder="الجوال"
                               required
                             />
                           </div>
@@ -716,72 +714,37 @@
                         <div class="row">
                           <div class="col-1">
                             <div class="input-icon">
-                              <i class="fas fa-file-medical-alt"></i>
+                              <i class="fas fa-cut"></i>
                             </div>
                           </div>
 
                           <div class="col-11">
-                            <select
-                              name="select"
-                              required
-                              class="custom-select form-control"
-                            >
-                              <option selected>اختيار الخدمة</option>
-                              <option value="1"
-                                >جراحات السمنة و المناظير</option
-                              >
-                              <option value="2"
-                                >الحلول الغير جراحية للسمنة</option
-                              >
-                              <option value="3">التجميل النسائي</option>
-                              <option value="4">الجراحات التجميلية</option>
-                              <option value="5">الجلديه والحقن التجميلي</option>
-                              <option value="6"
-                                >الليزر التجميلي والعلاجي</option
-                              >
-                              <option value="7"
-                                >شد و صقل الجسم بدون جراحة</option
-                              >
-                              <option value="8"
-                                >علاج الدوالي و الشعيرات الدموية</option
-                              >
-                              <option value="9">تجميل و علاج الأسنان</option>
-                              <option value="10">الحمية والرشاقة</option>
-                              <option value="11">اخري</option>
-                            </select>
+                            <input
+                              type="text"
+                              name="Discount_code"
+                              class="form-control"
+                              id="form-code"
+                              aria-describedby="code"
+                              placeholder="كود الخصم"
+                            />
+                            <input type="hidden" name="source" value="goog" />
+                            <input
+                              type="hidden"
+                              name="status"
+                              value="طلب جديد"
+                            />
+                            <input type="hidden" name="department" value="قسم جراحة السمنة">
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <!-- <div class="col-md-6">
-                              <div class="form-group">
-                                <div class="row">
-                                  <div class="col-1">
-                                    <div class="input-icon">
-                                      <i class="fas fa-cut"></i>
-                                    </div>
-                                  </div>
-          
-                                  <div class="col-11">
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="form-code"
-                                      aria-describedby="code"
-                                      placeholder="كود الخصم"
-                                      required
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div> -->
                   </div>
 
                   <div class="form-group text-center">
                     <button
                       type="submit"
-                      class="btn link action-btn slider-more link-padding no-line"
+                      class="btn link action-btn slider-more link-padding no-line wow fadeInUp"
+                      data-wow-duration="2s"
                     >
                       ارسال
                     </button>
@@ -959,10 +922,11 @@
                     <div class="col-11">
                       <input
                         type="text"
+                        name="title"
                         class="form-control"
                         id="form-name"
                         aria-describedby="name"
-                        placeholder="الأسم"
+                        placeholder="الأسم بالكامل"
                         required
                       />
                     </div>
@@ -982,10 +946,11 @@
                     <div class="col-11">
                       <input
                         type="tel"
+                        name="phone"
                         class="form-control"
                         id="form-phone"
                         aria-describedby="phone"
-                        placeholder="رقم الهاتف"
+                        placeholder="الجوال"
                         required
                       />
                     </div>
@@ -993,62 +958,7 @@
                 </div>
               </div>
 
-              <div class="col-md-6">
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col-1">
-                      <div class="input-icon">
-                        <i class="fas fa-file-medical-alt"></i>
-                      </div>
-                    </div>
-
-                    <div class="col-11">
-                      <select
-                        name="select"
-                        required
-                        class="custom-select form-control"
-                      >
-                        <option selected>اختيار الخدمة</option>
-                        <option value="1">جراحات السمنة و المناظير</option>
-                        <option value="2">الحلول الغير جراحية للسمنة</option>
-                        <option value="3">التجميل النسائي</option>
-                        <option value="4">الجراحات التجميلية</option>
-                        <option value="5">الجلديه والحقن التجميلي</option>
-                        <option value="6">الليزر التجميلي والعلاجي</option>
-                        <option value="7">شد و صقل الجسم بدون جراحة</option>
-                        <option value="8"
-                          >علاج الدوالي و الشعيرات الدموية</option
-                        >
-                        <option value="9">تجميل و علاج الأسنان</option>
-                        <option value="10">الحمية والرشاقة</option>
-                        <option value="11">اخري</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <!-- <div class="form-group">
-                    <div class="row">
-                      <div class="col-1">
-                        <div class="input-icon">
-                          <i class="fas fa-envelope-open-text"></i>
-                        </div>
-                      </div>
-
-                      <div class="col-11">
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="form-email"
-                          aria-describedby="email"
-                          placeholder="البريد الألكتروني"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div> -->
+              <div class="col-md-12">
                 <div class="form-group">
                   <div class="row">
                     <div class="col-1">
@@ -1060,12 +970,15 @@
                     <div class="col-11">
                       <input
                         type="text"
+                        name="Discount_code"
                         class="form-control"
                         id="form-code"
                         aria-describedby="code"
                         placeholder="كود الخصم"
-                        required
                       />
+                      <input type="hidden" name="source" value="goog" />
+                      <input type="hidden" name="status" value="طلب جديد" />
+                      <input type="hidden" name="department" value="قسم جراحة السمنة">
                     </div>
                   </div>
                 </div>
