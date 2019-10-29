@@ -544,6 +544,7 @@ button {
 }
 
 .doctor-img {
+  position: relative;
   background-image: url("../images/new/slider-img.jpg");
   height: 350px;
   background-size: cover;
@@ -615,8 +616,9 @@ button {
 
 .internal-box-title {
   color: #006985;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
+  margin-top: 0.5em;
 }
 
 .internal-box-p {
@@ -625,6 +627,17 @@ button {
 
 .internal-box-caption {
   height: 175px;
+  padding: 0 0.7em;
+}
+
+.beauty-box-caption {
+  height: 375px;
+  padding: 0 0.7em;
+}
+
+.bariatric-box-caption {
+  height: 230px;
+  padding: 0 0.7em;
 }
 
 .internal-service-box li {
@@ -639,7 +652,6 @@ button {
 
 .internal-service-box {
   margin-bottom: 3em;
-  padding: 0 1em;
   border: 1px solid #00688548;
 }
 
@@ -657,7 +669,7 @@ button {
 }
 
 .internal-margin {
-  margin: 50px 40px ;
+  margin: 50px 40px;
 }
 
 .before-after-slider img {
@@ -665,6 +677,60 @@ button {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 1em;
+}
+
+.why-us-icon img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.bariatric-box-icon img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.bariatric-title-h2 {
+  color: #006985;
+  font-size: 1.5em;
+}
+
+.bariatric-more-p {
+  color: #006985;
+}
+
+.bariatric-more {
+  background: url("../images/pattern-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.doctor-caption-overlay {
+  position: absolute;
+  height: 100%;
+  width: 45%;
+  top: 0;
+  right: 0;
+  color: #fff;
+  padding: 4em 1.2em 0 0;
+  background: linear-gradient(to left,#00000080 40%, #00000057 80%, transparent);
+}
+
+.doctor-caption-h2 {
+  font-size: 2.5em;
+  color: #fdba2e;
+}
+
+.doctor-caption-p {
+  font-size: 1.2em;
+}
+
+.video {
+  margin-bottom: 1.5em;
+}
+
+.video iframe {
+  width: 100% !important;
+  height: 230px !important;
 }
 
 @media (min-width: 992px) and (max-width: 1183px) {
@@ -746,6 +812,10 @@ button {
   .popup-close {
     left: 20px;
     top: 15px;
+  }
+
+  .bariatric-box-caption {
+    height: 300px;
   }
 }
 
@@ -838,6 +908,18 @@ button {
     left: 20px;
     top: 15px;
   }
+
+  .bariatric-more {
+    background-position: center;
+  }
+
+  .bariatric-box-caption {
+    height: 160px;
+  }
+
+  .video iframe {
+    height: 190px !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -867,6 +949,7 @@ button {
 
   .form-box {
     margin-top: 2em;
+    background-size: cover;
   }
 
   .form-control {
@@ -911,7 +994,7 @@ button {
 
   .popup-body {
     width: 95%;
-    height: 60%;
+    height: 95%;
     top: 50%;
     border: 0;
   }
@@ -927,5 +1010,29 @@ button {
 
   .top-header {
     display: none;
+  }
+
+  .doctor-caption-h2 {
+    font-size: 1.5em;
+  }
+
+  .doctor-caption-overlay {
+    width: 100%;
+  }
+
+  .bariatric-box-caption {
+    height: 180px;
+  }
+
+  .bariatric-box-icon img {
+    height: auto;
+  }
+
+  .internal-box-title {
+    margin-top: 1em;
+  }
+
+  .before-after-slider img {
+    height: auto;
   }
 }
