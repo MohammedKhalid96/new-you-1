@@ -12,6 +12,7 @@
     url("../fonts/Fairuz-Normal.woff") format("woff"),
     url("../fonts/Fairuz-Normal.ttf") format("truetype"),
     url("../fonts/Fairuz-Normal.svg") format("svg");
+    font-display: swap;
 }
 
 html {
@@ -267,7 +268,7 @@ footer {
   display: inline-block;
   border-radius: 20em;
   border-top-right-radius: 0;
-  padding: 0.3em 1em;
+  padding: 0.5em 2em;
   background: linear-gradient(to right, #fdba2e, #fdbb2ed2);
   color: #fff;
 }
@@ -299,7 +300,7 @@ footer {
   background: linear-gradient(141deg, #006985 0%, #1fc8db 61%, #006985 75%);
   color: #fff !important;
   font-size: 0.9em;
-  padding: 0.3em 0.8em;
+  padding: 0.5em 2em;
   border-radius: 20em;
   border-top-right-radius: 0;
 }
@@ -499,9 +500,9 @@ button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 75%;
-  height: 38%;
-  background-image: url("../images/contact-map-bg-dark.png");
-  background-size: contain;
+  height: 46%;
+  background-image: url("../images/new/contact-map-bg-dark.png");
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 30px;
   border: 1px solid #1fc8db;
@@ -651,7 +652,7 @@ button {
 }
 
 .internal-service-box {
-  margin-bottom: 3em;
+  margin: 0 0.5em 3em 0.5em;
   border: 1px solid #00688548;
 }
 
@@ -694,7 +695,7 @@ button {
 }
 
 .bariatric-box-icon img {
-  height: 150px;
+  height: 160px;
   object-fit: cover;
 }
 
@@ -740,6 +741,34 @@ button {
 .video iframe {
   width: 100% !important;
   height: 230px !important;
+}
+
+.fixed-mobile {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 40%;
+}
+
+.fixed-mobile a {
+  display: inline-block;
+  background: #006985;
+  color: #fdba2e;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-decoration: none;
+  border-bottom-right-radius: 1em;
+}
+
+.fixed-mobile i {
+  font-size: 1.3em;
+}
+
+.fixed-mobile li {
+  text-align: center;
+  list-style: none;
+  margin-bottom: 1em;
 }
 
 @media (min-width: 992px) and (max-width: 1183px) {
@@ -936,6 +965,10 @@ button {
     padding: 20px;
   }
 
+  .fixed-mobile {
+    display: block;
+  }
+
   .navbar-toggler {
     margin-top: 0;
   }
@@ -959,10 +992,11 @@ button {
   .form-box {
     margin-top: 2em;
     background-size: cover;
+    padding-bottom: 0;
   }
 
   .form-control {
-    margin-bottom: 4em;
+    margin-bottom: 2.5em;
   }
 
   .first-form-line {
@@ -1022,11 +1056,25 @@ button {
   }
 
   .doctor-caption-h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
+    font-weight: bold;
+  }
+
+  .doctor-caption-p {
+    font-size: 1.4em;
   }
 
   .doctor-caption-overlay {
     width: 100%;
+    text-align: center;
+  }
+
+  .doctor-img {
+    height: 335px;
+  }
+
+  .doctor-img img {
+    width: 363px;
   }
 
   .bariatric-box-caption {

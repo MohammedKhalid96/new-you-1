@@ -138,9 +138,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
-
             <li class="nav-item">
-              <a class="nav-link" href="#internal-services">
+              <a class="nav-link" href="#footer">
                 <i
                   class="fas fa-file-medical-alt wow fadeInLeft"
                   data-wow-duration="2s"
@@ -211,39 +210,9 @@
               </h2>
 
               <p class="section-title-p">
-                يرجي تسجيل بياناتك لنقوم بالتواصل معك في اقرب وقت
-              </p>
-
-              <p class="section-title-p">
                 لا تردد في التواصل معنا نحن في انتظار تلقي طلباتكم واستفسارتكم
                 في اي وقت
               </p>
-            </div>
-
-            <div class="contact-info">
-              <li>
-                <a href="tel:+966539199115" class="contact-link">
-                  <i class="fas fa-mobile-alt"></i>
-                  966539199115+
-                </a>
-              </li>
-
-              <li>
-                <a href="mailto:info@newyousa.com" class="contact-link">
-                  <i class="fas fa-envelope-open-text"></i>
-                  info@newyousa.com
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="https://www.google.com/maps?ll=24.725268,46.681699&z=13&t=m&hl=en&gl=US&mapclient=embed&cid=13588028579942505075"
-                  class="contact-link"
-                >
-                  <i class="fas fa-map-marked-alt"></i>
-                  شارع الأمير احمد بن عبدالعزيز، حي الورود ، الرياض
-                </a>
-              </li>
             </div>
           </div>
           <div class="col-md-12 col-lg-7">
@@ -289,7 +258,7 @@
                             class="form-control"
                             id="form-phone"
                             aria-describedby="phone"
-                            placeholder="الجوال"
+                            placeholder="رقم الجوال"
                             required
                           />
                         </div>
@@ -302,7 +271,7 @@
                       <div class="row">
                         <div class="col-1">
                           <div class="input-icon">
-                            <i class="fas fa-cut"></i>
+                            <i class="fas fa-percent"></i>
                           </div>
                         </div>
 
@@ -316,12 +285,12 @@
                             placeholder="كود الخصم"
                           />
                           <input type="hidden" name="source" value="goog" />
+                          <input type="hidden" name="status" value="طلب جديد" />
                           <input
                             type="hidden"
-                            name="status"
-                            value="طلب جديد"
+                            name="department"
+                            value="قسم جراحة السمنة"
                           />
-                          <input type="hidden" name="department" value="قسم جراحة السمنة">
                         </div>
                       </div>
                     </div>
@@ -348,7 +317,7 @@
       <div class="doctor-img">
         <div class="doctor-overlay text-left">
           <img
-            src="images/new/bariatric/doctor.png"
+            data-src="images/new/bariatric/doctor.png"
             alt=""
             class="image-100 wow fadeIn"
             data-wow-duration="2s"
@@ -371,15 +340,15 @@
 
     <div id="internal-services" class="internal-services section-padding">
       <div class="internal-services-wrap text-center">
-        <div class="row">
+        <div class="row no-gutters">
           <div class="col-md-12 col-lg-9">
-            <div class="row">
+            <div class="row no-gutters">
               <div class="col-md-6 col-lg-3">
                 <div class="internal-service-box">
                   <a href="javascript:void(0);">
                     <div class="bariatric-box-icon">
                       <img
-                        src="https://newyousa.com/wp-content/uploads/2019/01/D8_A7_D9_84_D8_AA_D9_83_D9_85_D9_8A_D9_85._9450c5ecc29d6e2e89b1dd58397ae58f-390x273.jpg"
+                        data-src="images/new/bariatric/تكميم.jpg"
                         alt=""
                         class="image-100"
                       />
@@ -411,7 +380,7 @@
                   <a href="javascript:void(0);">
                     <div class="bariatric-box-icon">
                       <img
-                        src="https://newyousa.com/wp-content/uploads/2019/01/D9_83_D8_B1_D9_85_D8_B4_D8_A9-_D8_A7_D9_84_D9_85__7a2d834ac5ce0854fcf69a1b1656aa06.jpg"
+                        data-src="images/new/bariatric/كرمشة.jpg"
                         alt=""
                         class="image-100"
                       />
@@ -445,7 +414,7 @@
                   <a href="javascript:void(0);">
                     <div class="bariatric-box-icon">
                       <img
-                        src="https://newyousa.com/wp-content/uploads/2019/01/D8_A8_D8_A7_D9_84_D9_88_D9_86-_D8_A7_D9_84_D9_85__f2fbbacb2575c95c59b8d07a28e16750-390x273.jpg"
+                        data-src="https://newyousa.com/wp-content/uploads/2019/01/D8_A8_D8_A7_D9_84_D9_88_D9_86-_D8_A7_D9_84_D9_85__f2fbbacb2575c95c59b8d07a28e16750-400x355.jpg"
                         alt=""
                         class="image-100"
                       />
@@ -479,7 +448,7 @@
                   <a href="javascript:void(0);">
                     <div class="bariatric-box-icon">
                       <img
-                        src="https://newyousa.com/wp-content/uploads/2019/03/بالون-المعدة-390x273.jpeg"
+                        data-src="https://newyousa.com/wp-content/uploads/2019/03/بالون-المعدة-390x273.jpeg"
                         alt=""
                         class="image-100"
                       />
@@ -517,10 +486,41 @@
                 ان زيادة الوزن لا تعتبر مشكلة جمالية فحسب بل يتعدي ذلك لكونها
                 خطر علي صحة الانسان حيث قد تسبب بأمراض..
               </p>
-              <a href="#" class="link">اقراء المزيد</a>
+              <a
+                href="https://newyousa.com/%D8%AC%D8%B1%D8%A7%D8%AD%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D9%85%D9%86%D8%A9-%D9%88-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B8%D9%8A%D8%B1/"
+                class="link"
+                >اقراء المزيد</a
+              >
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="video-srcs none">
+        <div
+          class="video-src1"
+          src="https://www.youtube.com/embed/DTKdYK651dU"
+        ></div>
+        <div
+          class="video-src2"
+          src="https://www.youtube.com/embed/25iWmpFlyI0"
+        ></div>
+        <div
+          class="video-src3"
+          src="https://www.youtube.com/embed/hRIzUz0XQdY"
+        ></div>
+        <div
+          class="video-src4"
+          src="https://www.youtube.com/embed/8gMc2Ari4-k"
+        ></div>
+        <div
+          class="video-src5"
+          src="https://www.youtube.com/embed/k6SbLGN6nxk"
+        ></div>
+        <div
+          class="video-src6"
+          src="https://www.youtube.com/embed/z91k0MTt9ok"
+        ></div>
       </div>
 
       <div class="videos section-margin wow">
@@ -528,9 +528,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-1"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/DTKdYK651dU"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -541,9 +542,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-2"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/25iWmpFlyI0"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -554,9 +556,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-3"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/hRIzUz0XQdY"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -567,9 +570,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-4"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/8gMc2Ari4-k"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -580,9 +584,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-5"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/k6SbLGN6nxk"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -593,9 +598,10 @@
           <div class="col-md-4">
             <div class="video">
               <iframe
+                class="video-6"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/z91k0MTt9ok"
+                src=""
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
@@ -693,7 +699,7 @@
                               class="form-control"
                               id="form-phone"
                               aria-describedby="phone"
-                              placeholder="الجوال"
+                              placeholder="رقم الجوال"
                               required
                             />
                           </div>
@@ -706,7 +712,7 @@
                         <div class="row">
                           <div class="col-1">
                             <div class="input-icon">
-                              <i class="fas fa-cut"></i>
+                              <i class="fas fa-percent"></i>
                             </div>
                           </div>
 
@@ -725,7 +731,11 @@
                               name="status"
                               value="طلب جديد"
                             />
-                            <input type="hidden" name="department" value="قسم جراحة السمنة">
+                            <input
+                              type="hidden"
+                              name="department"
+                              value="قسم جراحة السمنة"
+                            />
                           </div>
                         </div>
                       </div>
@@ -749,12 +759,12 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3">
             <div class="footer-about">
-              <img src="images/header-logo.png" alt="" />
+              <img data-src="images/header-logo.png" alt="" />
               <p>
                 يقدم مركز "نيو يو" خدمات عالية الجودة والفاعلية من خلال فريق طبى
                 ذو خبرة وتميز وباستخدام أحدث وسائل التكنولوجيا الطبية
@@ -894,6 +904,20 @@
       </div>
     </footer>
 
+    <div class="fixed-mobile">
+      <li>
+        <a href="https://wa.me/+966539199115">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="tel:+966539199115">
+          <i class="fas fa-mobile-alt"></i>
+        </a>
+      </li>
+    </div>
+
     <div class="copyrights text-center">
       <p><i class="far fa-copyright"></i>نيو يو جميع الحقوق محفوظة</p>
     </div>
@@ -942,7 +966,7 @@
                         class="form-control"
                         id="form-phone"
                         aria-describedby="phone"
-                        placeholder="الجوال"
+                        placeholder="رقم الجوال"
                         required
                       />
                     </div>
@@ -955,7 +979,7 @@
                   <div class="row">
                     <div class="col-1">
                       <div class="input-icon">
-                        <i class="fas fa-cut"></i>
+                        <i class="fas fa-percent"></i>
                       </div>
                     </div>
 
@@ -970,7 +994,11 @@
                       />
                       <input type="hidden" name="source" value="goog" />
                       <input type="hidden" name="status" value="طلب جديد" />
-                      <input type="hidden" name="department" value="قسم جراحة السمنة">
+                      <input
+                        type="hidden"
+                        name="department"
+                        value="قسم جراحة السمنة"
+                      />
                     </div>
                   </div>
                 </div>
@@ -1005,9 +1033,8 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/anim.js"></script>

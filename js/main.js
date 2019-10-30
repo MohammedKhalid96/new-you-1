@@ -57,12 +57,26 @@ $(document).ready(function() {
     }
   });
 
-//   var rellax = new Rellax(".rellax", {
-//     speed: -2,
-//     center: false,
-//     wrapper: null,
-//     round: true,
-//     vertical: true,
-//     horizontal: false
-//   });
+  if ($("#contact-section").length) {
+    var waypoint = new Waypoint({
+      element: document.getElementById("contact-section"),
+      handler: function() {
+        $(".video-1").attr("src", $(".video-src1").attr("src"));
+        $(".video-2").attr("src", $(".video-src2").attr("src"));
+        $(".video-3").attr("src", $(".video-src3").attr("src"));
+        $(".video-4").attr("src", $(".video-src4").attr("src"));
+        $(".video-5").attr("src", $(".video-src5").attr("src"));
+        $(".video-6").attr("src", $(".video-src6").attr("src"));
+
+        var imgEl = document.getElementsByTagName("img");
+        for (var i = 0; i < imgEl.length; i++) {
+          if (imgEl[i].getAttribute("data-src")) {
+            imgEl[i].setAttribute("src", imgEl[i].getAttribute("data-src"));
+            imgEl[i].removeAttribute("data-src"); //use only if you need to remove data-src attribute after setting src
+          }
+        }
+      },
+      offset: "70%"
+    });
+  }
 });
