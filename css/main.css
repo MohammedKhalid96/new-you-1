@@ -631,7 +631,7 @@ button {
 }
 
 .beauty-box-caption {
-  height: 375px;
+  height: 440px;
   padding: 0 0.7em;
 }
 
@@ -653,6 +653,15 @@ button {
 .internal-service-box {
   margin-bottom: 3em;
   border: 1px solid #00688548;
+}
+
+.beauty-box-caption li {
+  border-bottom: 1px solid #fdbb2e11;
+  padding-bottom: 0.5em;
+}
+
+.beauty-box-caption li:last-of-type {
+  border-bottom: 0;
 }
 
 .internal-box-action {
